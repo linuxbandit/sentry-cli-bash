@@ -8,7 +8,9 @@ LABEL maintainer="Fabrizio Bellicano <bellicaf@tcd.ie>" \
     description="sentry-cli with bash." \
     license="MIT"
 
-RUN apk add --no-cache bash=4.4.19-r1
+RUN apk add --no-cache \
+       bash=4.4.19-r1 \
+       git=2.15.4-r0
 
 ENTRYPOINT [ "/bin/bash" ]
 
